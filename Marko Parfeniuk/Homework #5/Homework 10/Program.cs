@@ -16,14 +16,11 @@ namespace homework
                 new Triangle(new Point(1, 5), new Point(2, 5), new Point(4, 6))
             };
 
-
-
             foreach (Triangle triangle in triangles)
             {
                 triangle.Print();
             }
-            Triangle t = new Triangle(new Point(1, 1), new Point(1, 4), new Point(1, 5));
-
+			
             triangles.OrderBy(x => 
                 new List<double> {
                     x.Distance(x.Vertex1, origin),
